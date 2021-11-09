@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "start:dev":"nodemon app"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/JulieJud/CLI-/issues"
   },
-  "homepage": "https://github.com/JulieJud/CLI-#readme"
+  "homepage": "https://github.com/JulieJud/CLI-#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
 }
