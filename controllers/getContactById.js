@@ -1,8 +1,8 @@
 const listContacts = require("./listContacts");
 
-const getContactById = async (contactId) => {
+const getContactById = async (id) => {
   const contacts = await listContacts();
-  const contact = contacts.filter((item) => item.id === Number(contactId));
+  const contact = contacts.find((item) => item.id === Number(id));
   if (!contact) {
     return null;
   }
