@@ -4,7 +4,7 @@ const getContactById = async (contactId) => {
   const contacts = await listContacts();
   const contact = contacts.filter((item) => item.id === Number(contactId));
   if (!contact) {
-    return;
+    return null;
   }
   console.table(contacts);
   return contact;
